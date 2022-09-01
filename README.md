@@ -1,2 +1,2 @@
-# SP-Lab-Tasks
+# Structure-Programming
 
