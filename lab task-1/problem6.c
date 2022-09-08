@@ -10,7 +10,7 @@ int main()
     scanf("%f", &f);
 
     c = f-32;
-    printf("Enter centigrade Temperature is %.2f", c);
+    printf("Enter centigrade Temperature is %.2f",c);
 
     return 0;
 }

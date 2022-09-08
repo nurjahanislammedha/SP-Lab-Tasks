@@ -29,7 +29,7 @@ int main ()
     aggregateMark = subjectOne+subjectTwo+subjectThree+subjectFour+subjectFive;
     percantage = aggregateMark / 5;
 
-    printf("Enter total mark:%.2f", aggregateMark);
+    printf("Enter total mark:%.2f",aggregateMark);
     printf("\nPercentage mark: %.2f",percantage);
 
     return 0;
