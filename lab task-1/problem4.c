@@ -1,3 +1,4 @@
+/* count numbers*/
 #include <stdio.h>
 int main()
 {

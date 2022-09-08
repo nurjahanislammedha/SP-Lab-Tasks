@@ -15,7 +15,7 @@ int main ()
     gross_salary=basic_salary+dearness_alllowance+house_rent;
 
     /* .2 is taken because it will show 2 cells after decimal value*/
-    printf (" Gross salary is = % .2f", gross_salary );
+    printf ("Gross salary is =% .2f", gross_salary );
 
     return 0;
 }
