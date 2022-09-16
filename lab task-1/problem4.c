@@ -1,4 +1,4 @@
-/* count numbers*/
+/* count distance accordingly*/
 #include <stdio.h>
 int main()
 {

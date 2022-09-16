@@ -1,3 +1,5 @@
+/*Niloy's basic salary is input, calculate gross salary (1)*/
+
 #include <stdio.h>
 
 int main ()
