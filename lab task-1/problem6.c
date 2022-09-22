@@ -9,8 +9,8 @@ int main()
     printf("Enter Fahrenheit Temperature = ");
     scanf("%f", &f);
 
-    c = f-32;
-    printf("Enter centigrade Temperature is %.2f",c);
+    c = ((f-32)*5/9);
+    printf("Centigrade Temperature=%.2f",c);
 
     return 0;
 }
