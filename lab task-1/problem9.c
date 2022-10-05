@@ -1,36 +1,18 @@
-/* calculate the sum of five digit number that enter through keyboard*/
-/* rem = 12345 % 10 = 1234.5 = 5 = 0 + 5*/
-/* sum = 1234 / 10 = 123.4 = 4 = 4 + 5*/
+/*four digit number is input, obtain the sum of first and last digit number (9)*/
+/*Author: Nurjahan Islam Medha */
 
-#include <stdio.h>
- int main ()
- {
-     int number,sum=0,rem;
-     printf("Enter number = ");
-     scanf("%d", &number);
+#include<stdio.h>
+int main()
+{
+    int number ,a ,b ,c ,d ,sum;
 
-     rem = number % 10;
-     sum = sum + rem;
-     number = number / 10;
+    printf("Enter number = ");
+    scanf("%d", &number);
 
-     rem = number % 10;
-     sum = sum + rem;
-     number = number / 10;
+    d = number % 10;
+    a = number / 1000;
 
-     rem = number % 10;
-     sum = sum + rem;
-     number = number / 10;
+    printf("The sum of First number and Last number %d",sum = d+a);
 
-     rem = number % 10;
-     sum = sum + rem;
-     number = number / 10;
-
-     rem = number % 10;
-     sum = sum + rem;
-     number = number / 10;
-
-     printf("\nSum is %d",sum);
-     return 0;
-
- }
-
+    return 0;
+}

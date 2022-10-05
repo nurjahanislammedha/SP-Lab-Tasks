@@ -1,27 +1,21 @@
-/*find the total number of illiterate men and women (10)*/
+/*If the total selling price of 15 items and the total profit earned on them is input through the
+keyboard, write a program to find the cost price of one item*/
 
 #include<stdio.h>
-int main(){
+int main()
+{
+    float sp, p, cp;//sp = selling price  ,p = profit ,cp = cost price
 
-    int t_p = 80000; //total population
-    int m ,w,t_l_p ,t_l_m,t_l_w,t_il,tM;
 
-    m = t_p*0.52; //men
-    w = t_p-m; //women
+    printf("Enter selling price =");
+    scanf("%f", &sp);
 
-    t_l_p = t_p*0.48; //total literal population
-    t_l_m = t_p*0.35; //total literal man
-    tM = t_l_m-t_l_w; //total literal men on count
+    printf("Enter earned profit = ");
+    scanf("%f", &p);
 
-    t_il = t_p-t_l_p; //total literacy
-    t_l_w = t_il-t_l_m; //total literal women
+    cp = (sp - p)/15;
 
-    printf("Total number of illiterate man and women = %d",t_il);
-
-    printf("\nTotal illiterate man =%d", t_l_m);
-
-    printf("\nTotal illiterate women =%d", t_l_w);
+    printf("Cost price is = %.2f",cp);
 
     return 0;
-
 }

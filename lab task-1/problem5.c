@@ -1,37 +1,37 @@
-/*students mark in five different subjects*/
+/*calculate the area and perimeter of a rectangle as well as the area and circumference of the circle*/
 
-#include<stdio.h>
+#include <stdio.h>
+#include<math.h>
+
 int main ()
 {
-    float subjectOne;
-    float subjectTwo;
-    float subjectThree;
-    float subjectFour;
-    float subjectFive;
-    float aggregateMark;
-    float percantage;
+    float l;
+    float b;
+    float r;
+    float areaR;
+    float areaC;
+    float perimeter;
+    float circumference;
 
-    printf("Enter the number of subject one: ");
-    scanf("%f", &subjectOne);
+    printf("Enter Length of a rectangle = ");
+    scanf("%f", &l);
 
-     printf("Enter the number of subject Two: ");
-    scanf("%f", &subjectTwo);
+    printf("Enter Breadth of a rectangle = ");
+    scanf("%f", &b);
 
-     printf("Enter the number of subject Three: ");
-    scanf("%f", &subjectThree);
 
-     printf("Enter the number of subject Four: ");
-    scanf("%f", &subjectFour);
+    printf("Enter radius of a circle = ");
+    scanf("%f", &r);
 
-     printf("Enter the number of subject Five: ");
-    scanf("%f", &subjectFive);
+    areaR = l*b;
+    perimeter = 2*(l+b);
+    areaC = M_PI * r* r;/*Pi= 3.14.6*/
+    circumference = 2 * M_PI * r;
 
-    aggregateMark = subjectOne+subjectTwo+subjectThree+subjectFour+subjectFive;
-    percantage = aggregateMark / 5;
-
-    printf("Enter total mark:%.2f",aggregateMark);
-    printf("\nPercentage mark: %.2f",percantage);
+    printf("\nArea of Rectangle is %.2f\n",areaR);
+    printf("Perimeter of Rectangle is %.2f\n",perimeter);
+    printf("Area of Circle is %.2f\n",areaC);
+    printf("Circumference of Circle is %.2f\n",circumference);
 
     return 0;
-
 }

@@ -1,16 +1,26 @@
- #include <stdio.h>
- int main(){
-    int a;
-    int b;
-    int sum;
+/* count distance accordingly*/
+#include <stdio.h>
+int main()
+{
+    float distance;
+    float meter;
+    float feet;
+    float inches;
+    float centimeters;
 
-    a = 10;
-    b = 30;
+    printf ("Enter the distance between Mirpu and Ashulia = ");
+    scanf ("%f", &distance);
 
-    sum = a + b;
+    meter= 1000*distance;
+    feet= 3000*distance;
+    inches= 3300*distance;
+    centimeters= 4300*distance;
 
-    printf("sum is %d",sum);
+    printf ("Distance in meter= %.2f\n",meter);
+    printf ("Distance in feet= %.2f\n",feet);
+    printf ("Distance in inches= %.2f\n",inches);
+    printf ("Distance in centimters= %.2f\n",centimeters);
+
 
     return 0;
-
 }

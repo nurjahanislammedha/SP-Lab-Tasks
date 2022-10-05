@@ -1,16 +1,19 @@
-///converting fahrenheit temperature to centigrade degree ///
+/*Interchanging location of two inputs*/
 
 #include <stdio.h>
 int main()
 {
-    float f;
-    float c;
+    int c, d, x;
 
-    printf("Enter Fahrenheit Temperature = ");
-    scanf("%f", &f);
+    printf("Enter the value of C and D\n");
+    scanf("%d %d", &c,&d);
 
-    c = ((f-32)*5/9);
-    printf("Centigrade Temperature=%.2f",c);
+    x = c;
+    c = d;
+    d = x;
+
+    printf("Enter value of C is %d\nEnter value of D is %d\n", c,d);
 
     return 0;
+
 }

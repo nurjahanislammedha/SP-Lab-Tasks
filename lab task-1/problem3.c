@@ -1,23 +1,37 @@
-/*Niloy's basic salary is input, calculate gross salary (1)*/
+/*students mark in five different subjects*/
 
-#include <stdio.h>
-
+#include<stdio.h>
 int main ()
 {
-    float basic_salary;
-    float dearness_alllowance;
-    float house_rent;
-    float gross_salary;
+    float subjectOne;
+    float subjectTwo;
+    float subjectThree;
+    float subjectFour;
+    float subjectFive;
+    float aggregateMark;
+    float percantage;
 
-    printf(" Enter basic salary = ");
-    scanf ("%f", &basic_salary);
+    printf("Enter the number of subject one: ");
+    scanf("%f", &subjectOne);
 
-    dearness_alllowance=0.4*basic_salary;
-    house_rent=0.2*basic_salary;
-    gross_salary=basic_salary+dearness_alllowance+house_rent;
+     printf("Enter the number of subject Two: ");
+    scanf("%f", &subjectTwo);
 
-    /* .2 is taken because it will show 2 cells after decimal value*/
-    printf ("Gross salary is =% .2f", gross_salary );
+     printf("Enter the number of subject Three: ");
+    scanf("%f", &subjectThree);
+
+     printf("Enter the number of subject Four: ");
+    scanf("%f", &subjectFour);
+
+     printf("Enter the number of subject Five: ");
+    scanf("%f", &subjectFive);
+
+    aggregateMark = subjectOne+subjectTwo+subjectThree+subjectFour+subjectFive;
+    percantage = aggregateMark / 5;
+
+    printf("Enter total mark:%.2f",aggregateMark);
+    printf("\nPercentage mark: %.2f",percantage);
 
     return 0;
+
 }

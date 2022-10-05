@@ -1,37 +1,36 @@
-/*calculate the area and perimeter of a rectangle as well as the area and circumference of the circle*/
+/* calculate the sum of five digit number that enter through keyboard*/
+/* rem = 12345 % 10 = 1234.5 = 5 = 0 + 5*/
+/* sum = 1234 / 10 = 123.4 = 4 = 4 + 5*/
 
 #include <stdio.h>
-#include<math.h>
+ int main ()
+ {
+     int number,sum=0,rem;
+     printf("Enter number = ");
+     scanf("%d", &number);
 
-int main ()
-{
-    float l;
-    float b;
-    float r;
-    float areaR;
-    float areaC;
-    float perimeter;
-    float circumference;
+     rem = number % 10;
+     sum = sum + rem;
+     number = number / 10;
 
-    printf("Enter Length of a rectangle = ");
-    scanf("%f", &l);
+     rem = number % 10;
+     sum = sum + rem;
+     number = number / 10;
 
-    printf("Enter Breadth of a rectangle = ");
-    scanf("%f", &b);
+     rem = number % 10;
+     sum = sum + rem;
+     number = number / 10;
 
+     rem = number % 10;
+     sum = sum + rem;
+     number = number / 10;
 
-    printf("Enter radius of a circle = ");
-    scanf("%f", &r);
+     rem = number % 10;
+     sum = sum + rem;
+     number = number / 10;
 
-    areaR = l*b;
-    perimeter = 2*(l+b);
-    areaC = M_PI * r* r;/*Pi= 3.14.6*/
-    circumference = 2 * M_PI * r;
+     printf("\nSum is %d",sum);
+     return 0;
 
-    printf("\nArea of Rectangle is %.2f\n",areaR);
-    printf("Perimeter of Rectangle is %.2f\n",perimeter);
-    printf("Area of Circle is %.2f\n",areaC);
-    printf("Circumference of Circle is %.2f\n",circumference);
+ }
 
-    return 0;
-}

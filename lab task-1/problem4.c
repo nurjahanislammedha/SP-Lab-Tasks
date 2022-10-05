@@ -1,26 +1,16 @@
-/* count distance accordingly*/
+///converting fahrenheit temperature to centigrade degree ///
+
 #include <stdio.h>
 int main()
 {
-    float distance;
-    float meter;
-    float feet;
-    float inches;
-    float centimeters;
+    float f;
+    float c;
 
-    printf ("Enter the distance between Mirpu and Ashulia = ");
-    scanf ("%f", &distance);
+    printf("Enter Fahrenheit Temperature = ");
+    scanf("%f", &f);
 
-    meter= 1000*distance;
-    feet= 3000*distance;
-    inches= 3300*distance;
-    centimeters= 4300*distance;
-
-    printf ("Distance in meter= %.2f\n",meter);
-    printf ("Distance in feet= %.2f\n",feet);
-    printf ("Distance in inches= %.2f\n",inches);
-    printf ("Distance in centimters= %.2f\n",centimeters);
-
+    c = ((f-32)*5/9);
+    printf("Centigrade Temperature=%.2f",c);
 
     return 0;
 }

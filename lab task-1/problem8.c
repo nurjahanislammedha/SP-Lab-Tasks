@@ -1,19 +1,34 @@
-/*Interchanging location of two inputs*/
+/*reverse five digit number that enter through keyboard*/
 
-#include <stdio.h>
+#include<stdio.h>
 int main()
 {
-    int c, d, x;
+    int number = 12345, rev = 0, sum;
 
-    printf("Enter the value of C and D\n");
-    scanf("%d %d", &c,&d);
+    printf ("Initial value = ");
+    scanf("%d", &number);
 
-    x = c;
-    c = d;
-    d = x;
+    sum = number % 10;
+    rev = rev *10 + sum;
+    number = number / 10;
 
-    printf("Enter value of C is %d\nEnter value of D is %d\n", c,d);
+    sum = number % 10;
+    rev = rev *10 + sum;
+    number = number / 10;
+
+    sum = number % 10;
+    rev = rev *10 + sum;
+    number = number / 10;
+
+    sum = number % 10;
+    rev = rev *10 + sum;
+    number = number / 10;
+
+    sum = number % 10;
+    rev = rev *10 + sum;
+    number = number / 10;
+
+    printf("\nReverse value = %d", rev);
 
     return 0;
-
 }
